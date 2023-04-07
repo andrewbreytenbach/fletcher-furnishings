@@ -1,26 +1,6 @@
-/* Open and close the mobile menu */
-const menuBtn = document.querySelector('.menu-btn');
-const mobileMenu = document.querySelector('.mobile-menu');
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
 
-menuBtn.addEventListener('click', function() {
-  menuBtn.classList.toggle('open');
-  mobileMenu.classList.toggle('show');
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('show-nav');
 });
-
-/* Smooth scrolling to anchor links */
-const links = document.querySelectorAll('nav a');
-
-for (const link of links) {
-  link.addEventListener('click', clickHandler);
-}
-
-function clickHandler(e) {
-  e.preventDefault();
-  const href = this.getAttribute('href');
-  const offsetTop = document.querySelector(href).offsetTop;
-
-  scroll({
-    top: offsetTop,
-    behavior: "smooth"
-  });
-}

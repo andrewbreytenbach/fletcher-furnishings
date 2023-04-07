@@ -1,31 +1,63 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Fletcher Furnishing</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 	<header>
+		<img src="images/logo.png" alt="Fletcher Furnishing logo">
 		<nav>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Services</a></li>
-				<li><a href="#">Gallery</a></li>
-				<li><a href="#">Contact</a></li>
-				<li><a href="#">Shop</a></li>
-			</ul>
+			<div class="nav-toggle">
+				<span class="hamburger"></span>
+				<span class="hamburger"></span>
+				<span class="hamburger"></span>
+			</div>
+			<div class="nav-links">
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+				</ul>
+			</div>
 		</nav>
 	</header>
+
 	<main>
-		<h1>Welcome to Fletcher Furnishing</h1>
-		<p>We are a custom build wood design and furniture company.</p>
-		<p>Check out our latest products in our shop.</p>
+		<section id="home">
+			<h2 class="primary-color">Fletcher Furnishings</h2>
+			<h4 class="primary-color">Indianapolis, IN</h4>
+			<p class="secondary-color">Small woodworking shop located in Broad Ripple creating custom furniture and home
+				decor for your home or
+				office.</p>
+			<div id="custom-order-button">
+				<button>Custom Order</button>
+			</div>
+		</section>
+		<section id="about">
+			<p>I started woodworking in 2015 after my wife and I did not have enough money to purchase the coffee table
+				that we wanted. This all started with the phrase “I can build that” knowing I didn’t have the tools or
+				skills yet to build a coffee table. After weeks of research and borrowing tools we were able to build a
+				coffee table that we still have in our home and love 8 years later. This set in motion a hobby and
+				passion I have pursued since.</p>
+			<img class="first-table" src="images/first-table.jpg" alt="First Table Built">
+		</section>
+		<section>
+			<!-- Instagram -->
+			<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+			<div class="elfsight-app-570a4fe4-da69-4bfc-a121-fd21f6792b5e"></div>
+		</section>
 	</main>
-	<footer>
-		<p>&copy; 2023 Fletcher Furnishing. All rights reserved.</p>
+	<footer class="secondary-color">
+		<p>&copy; 2023 Fletcher Furnishings</p>
+		<p>Alex Fletcher - Owner/Craftsman</p>
 	</footer>
 </body>
+<script src="script.js"></script>
+
 </html>
