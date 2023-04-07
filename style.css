@@ -17,7 +17,7 @@ body {
   font-family: sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  overflow-x: hidden;
+  overflow-x: none;
 }
 
 .first-table {
@@ -33,7 +33,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
-  padding: 10px;
+  padding: 10px 0px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -64,35 +64,31 @@ nav {
   align-items: center;
   background-color: transparent;
   padding-bottom: 20px;
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 nav ul {
   display: flex;
   flex-direction: column;
   list-style: none;
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 nav li {
   margin-bottom: 10px;
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 nav a {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   text-decoration: none;
   transition: color 0.2s;
-}
-
-nav a:hover {
-  color: var(--primary-color);
 }
 
 /* Toggle menu styles */
 .nav-toggle {
   display: block;
-  color: var(--primary-color);
+  color: var(--secondary-color);
   cursor: pointer;
   padding: 10px;
 }
@@ -101,7 +97,7 @@ nav a:hover {
   display: block;
   width: 20px;
   height: 2px;
-  color: var(--primary-color);
+  color: var(--secondary-color);
   position: relative;
   transition: transform 0.2s ease;
 }
@@ -124,7 +120,7 @@ nav a:hover {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #333;
+  background-color: var(--secondary-color);
 }
 
 .nav-links {
@@ -162,23 +158,7 @@ main {
   padding-top: 20px;
 }
 
-/* Styles for the Contact section */
-#contact {
-  padding: 50px 20px;
-  text-align: center;
-}
 
-#contact h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-#contact form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 20px;
-}
 
 #contact label {
   display: block;
@@ -218,7 +198,7 @@ main {
 footer {
   background-color: var(--primary-color);
   text-align: center;
-  padding: 20px;
+  padding: 20px 0px;
 }
 
 /* Styles for the custom order button */
@@ -270,7 +250,7 @@ footer {
   
   /* Styles for the About section */
   #home {
-    padding: 50px 10px;
+    padding: 50px 0px;
   }
   
   #about h2 {
@@ -282,12 +262,16 @@ footer {
     font-size: 1rem;
     
   }
+
+  body {
+    overflow-x: hidden;
+  }
   
   
   
   /* Styles for the footer */
   footer {
-    padding: 10px;
+    padding: 10px 0px;
   }
   
   /* Styles for the custom order button */
@@ -295,4 +279,12 @@ footer {
     padding: 8px 16px;
     font-size: 14px;
   }
+}
+
+
+/* This is where the css starts for the Gallery */
+
+.card-img-top {
+  width: 100%;
+  height: 100%;
 }
