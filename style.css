@@ -9,6 +9,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Noto Serif JP', serif;
 }
 
 /* Basic styles for the page */
@@ -16,6 +17,7 @@ body {
   font-family: sans-serif;
   font-size: 16px;
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 .first-table {
@@ -31,7 +33,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
-  padding: 20px;
+  padding: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -46,12 +48,12 @@ header {
 /* Styles for the logo */
 
 header img {
-  height: 50px;
+  height: 100px;
 }
 
 @media only screen and (min-width: 768px) {
   header img {
-    height: 80px;
+    height: 100px;
   }
 }
 
@@ -61,7 +63,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: transparent;
-  padding: 20px;
+  padding-bottom: 20px;
   color: var(--primary-color);
 }
 
@@ -142,7 +144,7 @@ main {
 #home {
   background-image: url(images/background.jpg);
   background-size: cover;
-  height: 100%;
+  height: 50vh;
   width: 100%;
   background-position: center;
   color: #fff;
@@ -151,12 +153,13 @@ main {
 
 #about h2 {
   font-size: 2rem;
-  margin-bottom: 20px;
+  padding-top: 20px;
 }
 
 #about p {
   font-size: 1.2rem;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 /* Styles for the Contact section */
@@ -231,9 +234,18 @@ footer {
 }
 
 #custom-order-button {
-  width: 40%;
-  z-index: 9999;
-  }
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.who-we-are {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-align: center;
+}
+
     
 
 @media only screen and (max-width: 600px) {
@@ -245,7 +257,7 @@ footer {
   
   header img {
     margin-right: 0;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
   }
   
   nav li {
@@ -254,9 +266,7 @@ footer {
   }
   
   /* Styles for the main sections */
-  main {
-    padding: 10px;
-  }
+
   
   /* Styles for the About section */
   #home {
@@ -265,41 +275,15 @@ footer {
   
   #about h2 {
     font-size: 1.5rem;
-    margin-bottom: 10px;
+   
   }
   
   #about p {
     font-size: 1rem;
-    margin-bottom: 10px;
+    
   }
   
-  /* Styles for the Contact section */
-  #contact {
-    padding: 20px 10px;
-  }
   
-  #contact h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-  }
-  
-  #contact form {
-    margin-top: 10px;
-  }
-  
-  #contact input,
-  #contact textarea {
-    margin-bottom: 10px;
-  }
-  
-  #contact textarea {
-    height: 100px;
-  }
-  
-  #contact button {
-    padding: 8px 16px;
-    font-size: 14px;
-  }
   
   /* Styles for the footer */
   footer {
